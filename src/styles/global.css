@@ -1,0 +1,177 @@
+@import "tailwindcss";
+
+@theme {
+  /* Fonts */
+  --font-lexend: "Lexend", sans-serif;
+
+  /* Colors */
+  --color-primary: #000000;
+  --color-secondary: #ffffff;
+  --color-accent: #4af2c8; /* aqua */
+  --color-dark-gray: #1a1a1a; /* dark gray */
+
+  --flare-blue-50: #e8eaf7; /* blue 50 */
+  --flare-blue-100: #c4cbeb; /* blue 100 */
+  --flare-blue-200: #9daade; /* blue 200 */
+  --flare-blue-300: #7688d1; /* blue 300 */
+  --flare-blue-400: #576dc7; /* blue 400 */
+  --flare-blue-500: #3554bd; /* blue 500 */
+  --flare-blue-600: #2f4cb3; /* blue 600 Primary */
+  --flare-blue-700: #2542a7; /* blue 700 */
+  --flare-blue-800: #1b379b; /* blue 800 */
+  --flare-blue-900: #062586; /* blue 900 */
+
+  --flare-green-50: #dbfdf2; /* green 50 */
+  --flare-green-100: #a3f7de; /* green 100 */
+  --flare-green-200: #4af2c8; /* green 200 Secondary */
+  --flare-green-300: #00eab2; /* green 300 */
+  --flare-green-400: #00e1a1; /* green 400 */
+  --flare-green-500: #00d890; /* green 500 */
+  --flare-green-600: #00c783; /* green 600 */
+  --flare-green-700: #00b373; /* green 700 */
+  --flare-green-800: #00a165; /* green 800 */
+  --flare-green-900: #007f4c; /* green 900 */
+
+  --flare-yellow-50: #fefae7; /* yellow 50 */
+  --flare-yellow-100: #fbf1c3; /* yellow 100 */
+  --flare-yellow-200: #f8e99c; /* yellow 200 */
+  --flare-yellow-300: #f4e076; /* yellow 300 */
+  --flare-yellow-400: #efd95a; /* yellow 400 */
+  --flare-yellow-500: #ebd33f; /* yellow 500 */
+  --flare-yellow-600: #dcc23a; /* yellow 600 */
+  --flare-yellow-700: #c8ad34; /* yellow 700 */
+  --flare-yellow-800: #b3962f; /* yellow 800  Complementario */
+  --flare-yellow-900: #917226; /* yellow 900 */
+
+  --flare-cyan-50: #e3f6f8; /* cyan 50 */
+  --flare-cyan-100: #b8e7ee; /* cyan 100 */
+  --flare-cyan-200: #8dd6e5; /* cyan 200 */
+  --flare-cyan-300: #69c6db; /* cyan 300 */
+  --flare-cyan-400: #53bad7; /* cyan 400 */
+  --flare-cyan-500: #42aed3; /* cyan 500 */
+  --flare-cyan-600: #39a0c5; /* cyan 600 */
+  --flare-cyan-700: #2f8eb3; /* cyan 700 */
+  --flare-cyan-800: #2c7ca0; /* cyan 800 Analogo*/
+  --flare-cyan-900: #215d7f; /* cyan 900 */
+
+  --flare-deep-purple-50: #eee8f7; /* deep purple 50 */
+  --flare-deep-purple-100: #d3c5ed; /* deep purple 100 */
+  --flare-deep-purple-200: #b69fe1; /* deep purple 200 */
+  --flare-deep-purple-300: #9977d5; /* deep purple 300 */
+  --flare-deep-purple-400: #8259cc; /* deep purple 400 */
+  --flare-deep-purple-500: #6b3cc2; /* deep purple 500 */
+  --flare-deep-purple-600: #6237bc; /* deep purple 600 */
+  --flare-deep-purple-700: #542fb3; /* deep purple 700 Analogo */
+  --flare-deep-purple-800: #4829ab; /* deep purple 800 */
+  --flare-deep-purple-900: #321c9e; /* deep purple 900 */
+
+  --flare-purple-50: #f2e5f5; /* purple 50 */
+  --flare-purple-100: #dfbfe8; /* purple 100 */
+  --flare-purple-200: #cb95da; /* purple 200 */
+  --flare-purple-300: #b66bca; /* purple 300 */
+  --flare-purple-400: #a64cbf; /* purple 400 */
+  --flare-purple-500: #962fb3; /* purple 500 */
+  --flare-purple-600: #882cad; /* purple 600 */
+  --flare-purple-700: #7527a4; /* purple 700 Triada*/
+  --flare-purple-800: #64229c; /* purple 800 */
+  --flare-purple-900: #431b8d; /* purple 900 */
+
+  --flare-red-50: #fbe4e9; /* red 50 */
+  --flare-red-100: #f5bbc8; /* red 100 */
+  --flare-red-200: #ee91a4; /* red 200 */
+  --flare-red-300: #e66882; /* red 300 */
+  --flare-red-400: #df4c68; /* red 400 */
+  --flare-red-500: #d83952; /* red 500 Triada*/
+  --flare-red-600: #c83450; /* red 600 */
+  --flare-red-700: #b32f4c; /* red 700 */
+  --flare-red-800: #9f2a48; /* red 800 */
+  --flare-red-900: #7a2241; /* red 900 */
+
+  --flare-pink-50: #fee4ff; /* pink 50 */
+  --flare-pink-100: #f9b9fe; /* pink 100 */
+  --flare-pink-200: #f586fe; /* pink 200 */
+  --flare-pink-300: #ef41ff; /* pink 300 Select */
+  --flare-pink-400: #e900fe; /* pink 400 */
+  --flare-pink-500: #db00f3; /* pink 500 */
+  --flare-pink-600: #c800ef; /* pink 600 */
+  --flare-pink-700: #ae00ea; /* pink 700 */
+  --flare-pink-800: #9600e4; /* pink 800 */
+  --flare-pink-900: #6600db; /* pink 900 */
+
+  --flare-orange-50: #faebe9; /* orange 50 */
+  --flare-orange-100: #fed0c2; /* orange 100 */
+  --flare-orange-200: #feb19b; /* orange 200 */
+  --flare-orange-300: #ff9373; /* orange 300 */
+  --flare-orange-400: #ff7c54; /* orange 400 Select */
+  --flare-orange-500: #ff6738; /* orange 500 */
+  --flare-orange-600: #f56034; /* orange 600 */
+  --flare-orange-700: #e6592f; /* orange 700 */
+  --flare-orange-800: #d8532c; /* orange 800 */
+  --flare-orange-900: #bf4623; /* orange 900 */
+
+  /* animations */
+  --animate-first: moveVertical 30s ease infinite;
+  --animate-second: moveInCircle 20s reverse infinite;
+  --animate-third: moveInCircle 40s linear infinite;
+  --animate-fourth: moveHorizontal 40s ease infinite;
+  --animate-fifth: moveInCircle 20s ease infinite;
+}
+/* Definir keyframes personalizados */
+@keyframes moveHorizontal {
+  0% {
+    transform: translateX(-50%) translateY(-10%);
+  }
+  50% {
+    transform: translateX(50%) translateY(10%);
+  }
+  100% {
+    transform: translateX(-50%) translateY(-10%);
+  }
+}
+
+@keyframes moveInCircle {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes moveVertical {
+  0% {
+    transform: translateY(-50%);
+  }
+  50% {
+    transform: translateY(50%);
+  }
+  100% {
+    transform: translateY(-50%);
+  }
+}
+
+body {
+  font-family: var(--font-lexend);
+  color: var(--color-secondary);
+  background-color: var(--color-primary);
+}
+
+/* custom classes */
+.stardust {
+  background: linear-gradient(270deg, #40debf4d, #334ba94d);
+}
+.stardust-2 {
+  background: linear-gradient(270deg, #7527a44d, #962fb34d);
+}
+
+.mask-radial-gradient {
+  -webkit-mask-image: radial-gradient(rgba(0, 0, 0, 0.8), transparent 60%);
+  mask-image: radial-gradient(rgba(0, 0, 0, 0.8), transparent 60%);
+}
+.mask-radial-gradient-80 {
+  -webkit-mask-image: radial-gradient(rgba(0, 0, 0, 0.8), transparent 75%);
+  mask-image: radial-gradient(rgba(0, 0, 0, 0.8), transparent 75%);
+}
