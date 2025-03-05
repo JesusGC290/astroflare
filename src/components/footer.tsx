@@ -2,7 +2,7 @@ import astroLogo from "../assets/astro.svg";
 import { Facebook, Instagram, Twitter } from "lucide-react";
 
 export function Footer() {
-  const baseUrl = import.meta.env.SITE;
+  const baseUrl = import.meta.env.BASE_URL;
   return (
     <footer className="w-full border-t border-gray-500 bg-primary">
       <div className="w-full max-w-screen-2xl mx-auto px-4 sm:px-8">

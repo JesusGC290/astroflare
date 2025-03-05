@@ -2,7 +2,7 @@ import React from "react";
 import { BackgroundGradientAnimation } from "./ui/background-gradient-animation";
 
 export function BackgroundGradientAnimationHero() {
-  const baseUrl = import.meta.env.SITE;
+  const baseUrl = import.meta.env.BASE_URL;
   return (
     <BackgroundGradientAnimation>
       <div className="absolute z-50 inset-0 flex flex-col items-center justify-center text-center gap-5 md:gap-6 lg:gap-8 px-4">

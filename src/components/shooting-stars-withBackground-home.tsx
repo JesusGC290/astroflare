@@ -3,7 +3,7 @@ import React from "react";
 import { ShootingStars } from "./ui/shooting-stars";
 import { StarsBackground } from "./ui/stars-background";
 export function ShootingStarsAndStarsBackgroundHome() {
-  const baseUrl = import.meta.env.SITE;
+  const baseUrl = import.meta.env.BASE_URL;
   return (
     <div className="h-[40rem] rounded-lg bg-radial-[at_75%_5%] from-[var(--flare-red-900)] to-[var(--flare-blue-900)] flex flex-col items-center justify-center relative w-full overflow-hidden">
       <div className="space-y-6 absolute z-10 flex flex-col items-center justify-center w-full h-full">

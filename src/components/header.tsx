@@ -4,7 +4,7 @@ import { Facebook, Instagram, Twitter, Menu } from "lucide-react";
 import astroLogo from "../assets/astro.svg";
 
 export function Header() {
-  const baseUrl = import.meta.env.SITE;
+  const baseUrl = import.meta.env.BASE_URL;
   // Control del menú en móvil
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isDesktop, setIsDesktop] = useState(window.innerWidth >= 1024);
