@@ -1,5 +1,5 @@
 import { Link } from "react-router";
-import astroLogo from "../assets/astro-logo.svg";
+import astroLogo from "../assets/astro.svg";
 import { Facebook, Instagram, Twitter } from "lucide-react";
 
 export function Footer() {
@@ -67,12 +67,12 @@ export function Footer() {
               <ul aria-labelledby="footerHeading3" className="flex flex-col gap-2">
                 <li>
                   <Link to={`${baseUrl}/`} className="whitespace-nowrap link flex gap-2 items-center">
-                    Privacy Policy
+                    Política de privacidad
                   </Link>
                 </li>
                 <li>
                   <Link to={`${baseUrl}/`} className="whitespace-nowrap link flex gap-2 items-center">
-                    Terms of Service
+                    Terminos del servicio
                   </Link>
                 </li>
               </ul>
@@ -82,13 +82,15 @@ export function Footer() {
         <hr className="border-gray-700" />
         <nav aria-label="Legal" className="py-8 flex flex-col-reverse md:flex-row items-center justify-between gap-4">
           <div className="flex items-center gap-2 text-sm md:gap-4 md:text-base flex-wrap justify-center">
-            <img src={astroLogo.src} width="115" height="48" alt="Astro Homepage" />
-            <Link target="_blank" className="link" to="https://github.com/withastro/astro/blob/main/LICENSE">
+            <Link to={`${baseUrl}/`} className="text-2xl font-bold">
+              <img src={astroLogo.src} width="115" height="48" alt="Astro Homepage" />
+            </Link>
+            <a target="_blank" className="link" href="https://github.com/withastro/astro/blob/main/LICENSE">
               © 2025&nbsp;
-            </Link>
-            <Link className="link" target="_blank" to="https://github.com/withastro/astro/graphs/contributors">
-              All rights reserved.
-            </Link>
+            </a>
+            <a className="link" target="_blank" href="https://github.com/withastro/astro/graphs/contributors">
+              Todos los derechos reservados
+            </a>
           </div>
           <div className="flex items-center gap-1 flex-wrap">
             <a
@@ -97,7 +99,7 @@ export function Footer() {
               className="link flex items-center gap-2 p-3 text-white"
               href="https://facebook.com"
             >
-              <span className="sr-only">Join the Astro community on Discord</span>
+              <span className="sr-only">Siguenos en Facebook</span>
               <Facebook size={28} />
             </a>
             <a
@@ -106,7 +108,7 @@ export function Footer() {
               className="link flex items-center gap-2 p-3 text-white"
               href="https://instagram.com"
             >
-              <span className="sr-only">Go to Astro's GitHub repo</span>
+              <span className="sr-only">Siguenos en Instagram</span>
               <Instagram size={28} />
             </a>
             <a
@@ -115,7 +117,7 @@ export function Footer() {
               className="link flex items-center gap-2 p-3 text-white"
               href="https://twitter.com"
             >
-              <span className="sr-only">Follow Astro on Mastodon</span>
+              <span className="sr-only">Siguenos en X</span>
               <Twitter size={28} />
             </a>
           </div>
