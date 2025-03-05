@@ -2,7 +2,6 @@
 import React from "react";
 import { ShootingStars } from "./ui/shooting-stars";
 import { StarsBackground } from "./ui/stars-background";
-import { Link } from "react-router";
 export function ShootingStarsAndStarsBackgroundHome() {
   const baseUrl = import.meta.env.SITE;
   return (
@@ -11,14 +10,14 @@ export function ShootingStarsAndStarsBackgroundHome() {
         <h2 className="relative flex-col md:flex-row z-10 text-3xl md:text-5xl md:leading-tight max-w-5xl mx-auto text-center tracking-tight font-medium bg-clip-text text-transparent bg-gradient-to-b from-neutral-800 via-white to-white flex items-center gap-2 md:gap-8">
           <span>¡Comienza tu proyecto hoy!</span>
         </h2>
-        <Link
-          to={`${baseUrl}/`}
+        <a
+          href={`${baseUrl}/`}
           className="bg-white px-6 py-2 group rounded-full text-base font-normal transition-all ease-in-out duration-500 hover:cursor-pointer"
         >
           <span className="bg-clip-text text-transparent bg-gradient-to-r from-[var(--flare-blue-900)] to-[var(--flare-red-500)]  group-hover:text-blue-700 transition-all ease-in-out duration-500">
             Recibe una consulta gratuita y personalizada
           </span>
-        </Link>
+        </a>
       </div>
       <ShootingStars />
       <StarsBackground />

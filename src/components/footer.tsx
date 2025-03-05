@@ -1,4 +1,3 @@
-import { Link } from "react-router";
 import astroLogo from "../assets/astro.svg";
 import { Facebook, Instagram, Twitter } from "lucide-react";
 
@@ -22,19 +21,19 @@ export function Footer() {
               </h2>
               <ul aria-labelledby="footerHeading0" className="flex flex-col gap-2">
                 <li>
-                  <Link to={`${baseUrl}/`} className="whitespace-nowrap link flex gap-2 items-center">
+                  <a href={`${baseUrl}/`} className="whitespace-nowrap link flex gap-2 items-center">
                     Docs
-                  </Link>
+                  </a>
                 </li>
                 <li>
-                  <Link to={`${baseUrl}/`} className="whitespace-nowrap link flex gap-2 items-center">
+                  <a href={`${baseUrl}/`} className="whitespace-nowrap link flex gap-2 items-center">
                     Astro
-                  </Link>
+                  </a>
                 </li>
                 <li>
-                  <Link to={`${baseUrl}/`} className="whitespace-nowrap link flex gap-2 items-center">
+                  <a href={`${baseUrl}/`} className="whitespace-nowrap link flex gap-2 items-center">
                     Sitios
-                  </Link>
+                  </a>
                 </li>
               </ul>
             </section>
@@ -44,19 +43,19 @@ export function Footer() {
               </h2>
               <ul aria-labelledby="footerHeading2" className="flex flex-col gap-2">
                 <li>
-                  <Link to={`${baseUrl}/`} className="whitespace-nowrap link flex gap-2 items-center">
+                  <a href={`${baseUrl}/`} className="whitespace-nowrap link flex gap-2 items-center">
                     Nosotros
-                  </Link>
+                  </a>
                 </li>
                 <li>
-                  <Link to={`${baseUrl}/`} className="whitespace-nowrap link flex gap-2 items-center">
+                  <a href={`${baseUrl}/`} className="whitespace-nowrap link flex gap-2 items-center">
                     Blog
-                  </Link>
+                  </a>
                 </li>
                 <li>
-                  <Link to={`${baseUrl}/`} className="whitespace-nowrap link flex gap-2 items-center">
+                  <a href={`${baseUrl}/`} className="whitespace-nowrap link flex gap-2 items-center">
                     Partners
-                  </Link>
+                  </a>
                 </li>
               </ul>
             </section>
@@ -66,14 +65,14 @@ export function Footer() {
               </h2>
               <ul aria-labelledby="footerHeading3" className="flex flex-col gap-2">
                 <li>
-                  <Link to={`${baseUrl}/`} className="whitespace-nowrap link flex gap-2 items-center">
+                  <a href={`${baseUrl}/`} className="whitespace-nowrap link flex gap-2 items-center">
                     Política de privacidad
-                  </Link>
+                  </a>
                 </li>
                 <li>
-                  <Link to={`${baseUrl}/`} className="whitespace-nowrap link flex gap-2 items-center">
+                  <a href={`${baseUrl}/`} className="whitespace-nowrap link flex gap-2 items-center">
                     Terminos del servicio
-                  </Link>
+                  </a>
                 </li>
               </ul>
             </section>
@@ -82,9 +81,9 @@ export function Footer() {
         <hr className="border-gray-700" />
         <nav aria-label="Legal" className="py-8 flex flex-col-reverse md:flex-row items-center justify-between gap-4">
           <div className="flex items-center gap-2 text-sm md:gap-4 md:text-base flex-wrap justify-center">
-            <Link to={`${baseUrl}/`} className="text-2xl font-bold">
+            <a href={`${baseUrl}/`} className="text-2xl font-bold">
               <img src={astroLogo.src} width="115" height="48" alt="Astro Homepage" />
-            </Link>
+            </a>
             <a target="_blank" className="link" href="https://github.com/withastro/astro/blob/main/LICENSE">
               © 2025&nbsp;
             </a>

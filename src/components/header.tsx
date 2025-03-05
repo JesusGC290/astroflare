@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import "../styles/global.css";
 import { Facebook, Instagram, Twitter, Menu } from "lucide-react";
 import astroLogo from "../assets/astro.svg";
-import { Link } from "react-router";
 
 export function Header() {
   const baseUrl = import.meta.env.SITE;
@@ -42,27 +41,27 @@ export function Header() {
       <header className="shadow py-4">
         <nav className="max-w-7xl mx-auto flex justify-between items-center px-4 lg:px-0">
           {/* Logo */}
-          <Link to={`${baseUrl}/`} className="text-2xl font-bold">
+          <a href={`${baseUrl}/`} className="text-2xl font-bold">
             <img src={astroLogo.src} width="115" height="48" alt="Astro Homepage" />
-          </Link>
+          </a>
 
           {/* Menú de navegación en escritorio */}
           <div className="hidden shrink flex-row items-center gap-12 lg:flex text-base">
-            <Link to={`${baseUrl}/`} className="text-slate-100 hover:text-[#4af2c8] font-light text-[16px]">
+            <a href={`${baseUrl}/`} className="text-slate-100 hover:text-[#4af2c8] font-light text-[16px]">
               Inicio
-            </Link>
+            </a>
 
-            <Link to={`${baseUrl}/`} className="text-slate-100 hover:text-[#4af2c8] font-light">
+            <a href={`${baseUrl}/`} className="text-slate-100 hover:text-[#4af2c8] font-light">
               Portafolio
-            </Link>
+            </a>
 
-            <Link to={`${baseUrl}/`} className="text-slate-100 hover:text-[#4af2c8] font-light">
+            <a href={`${baseUrl}/`} className="text-slate-100 hover:text-[#4af2c8] font-light">
               Sobre nosotros
-            </Link>
+            </a>
 
-            <Link to={`${baseUrl}/`} className="text-slate-100 hover:text-[#4af2c8] font-light">
+            <a href={`${baseUrl}/`} className="text-slate-100 hover:text-[#4af2c8] font-light">
               Contacto
-            </Link>
+            </a>
           </div>
           {/* Redes sociales */}
           <div className="hidden lg:flex">
@@ -94,21 +93,21 @@ export function Header() {
         >
           {isMenuOpen && (
             <nav className="text-xl flex flex-col divide-y divide-gray-500 pb-12 text-left [&>*]:p-6">
-              <Link to={`${baseUrl}/`} className="text-slate-100 hover:text-[#4af2c8] font-light text-[16px]">
+              <a href={`${baseUrl}/`} className="text-slate-100 hover:text-[#4af2c8] font-light text-[16px]">
                 Inicio
-              </Link>
+              </a>
 
-              <Link to={`${baseUrl}/`} className="text-slate-100 hover:text-[#4af2c8] font-light">
+              <a href={`${baseUrl}/`} className="text-slate-100 hover:text-[#4af2c8] font-light">
                 Portafolio
-              </Link>
+              </a>
 
-              <Link to={`${baseUrl}/`} className="text-slate-100 hover:text-[#4af2c8] font-light">
+              <a href={`${baseUrl}/`} className="text-slate-100 hover:text-[#4af2c8] font-light">
                 Sobre nosotros
-              </Link>
+              </a>
 
-              <Link to={`${baseUrl}/`} className="text-slate-100 hover:text-[#4af2c8] font-light">
+              <a href={`${baseUrl}/`} className="text-slate-100 hover:text-[#4af2c8] font-light">
                 Contacto
-              </Link>
+              </a>
               <div className="flex flex-wrap justify-between gap-12 gap-y-6">
                 <div className="flex items-center gap-4 flex-wrap">
                   <a href="https://facebook.com" className="hover:text-blue-500" target="_blank">
@@ -121,12 +120,12 @@ export function Header() {
                     <Twitter size={20} />
                   </a>
                 </div>
-                <Link
-                  to={`${baseUrl}/`}
+                <a
+                  href={`${baseUrl}/`}
                   className="px-6 py-2 bg-gradient-to-r from-blue-600 to-violet-900 flex-grow sm:max-w-sm rounded-full text-center font-light"
                 >
                   Explorar
-                </Link>
+                </a>
               </div>
             </nav>
           )}
