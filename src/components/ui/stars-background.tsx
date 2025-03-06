@@ -48,6 +48,17 @@ export const StarsBackground: React.FC<StarBackgroundProps> = ({
     [starDensity, allStarsTwinkle, twinkleProbability, minTwinkleSpeed, maxTwinkleSpeed]
   );
 
+  const [currentTime, setCurrentTime] = useState(Date.now());
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      setCurrentTime(Date.now());
+    }, 16); // 16ms es aproximadamente 60fps
+
+    return () => {
+      clearInterval(intervalId);
+    };
+  }, []);
+
   useEffect(() => {
     const updateStars = () => {
       if (canvasRef.current) {
@@ -94,7 +105,7 @@ export const StarsBackground: React.FC<StarBackgroundProps> = ({
         ctx.fill();
 
         if (star.twinkleSpeed !== null) {
-          star.opacity = 0.5 + Math.abs(Math.sin((Date.now() * 0.001) / star.twinkleSpeed) * 0.5);
+          star.opacity = 0.5 + Math.abs(Math.sin((currentTime * 0.001) / star.twinkleSpeed) * 0.5);
         }
       });
 

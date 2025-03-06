@@ -1,0 +1,89 @@
+---
+import { AnimatedTestimonialsPortafolio } from "../components/animated-testimonials-portafolio";
+import { GlowingEffectPortafolio } from "../components/glowing-effect-portafolio";
+import { HeroParallaxPortfolio } from "../components/hero-parallax-portafolio";
+import { ShootingStarsAndStarsBackgroundHome } from "../components/shooting-stars-withBackground-home";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout>
+  <section>
+    <HeroParallaxPortfolio client:load />
+  </section>
+  <section class="my-20 sm:mt-36 mx-auto w-full max-w-screen-xl px-4 sm:px-8">
+    <div class="w-full">
+      <div class="space-y-1">
+        <span
+          class="bg-clip-text text-transparent bg-gradient-to-r from-[var(--flare-red-500)] to-[var(--flare-pink-300)] font-semibold"
+        >
+          Desarrollo de Proyectos
+        </span>
+        <h2
+          class="max-w-screen-lg text-balance font-light font-heading text-xl md:text-3xl lg:text-4xl md:leading-tight"
+        >
+          <span class="font-bold">Personalización</span> y <span class="font-bold">expertis</span> en tecnologías
+        </h2>
+        <p class="mt-3 w-full lg:w-2/3 xl:w-1/2 text-base lg:text-balance font-light">
+          Nos enfocamos en entender las necesidades específicas de cada proyecto y cliente, y nos adaptamos para ofrecer
+          la mejor solución. Desde el diseño visual hasta la elección de tecnologías, nos aseguramos de que cada
+          proyecto sea único y efectivo.
+        </p>
+      </div>
+    </div>
+    <div class="my-12">
+      <GlowingEffectPortafolio client:load />
+    </div>
+    <p class="text-astro-gray-300 text-balance">
+      Descubre cómo podemos ayudarte a establecer una presencia en línea sólida y confiable.
+      <a
+        class="text-astro-gray-100 underline underline-offset-2 decoration-astro-gray-300 hover:decoration-white transition-colors durartion-500 ease-out"
+        href="/"
+      >
+        Solicita un presupuesto</a
+      >
+      y empezamos a trabajar en tu proyecto.
+    </p>
+  </section>
+  <section class="my-20 sm:mt-36 mx-auto w-full max-w-screen-xl px-4 sm:px-8">
+    <div class="w-full">
+      <div class="space-y-1">
+        <span
+          class="bg-clip-text text-transparent bg-gradient-to-r from-[var(--flare-red-500)] to-[var(--flare-pink-300)] font-semibold"
+        >
+          Testimonios de satisfacción
+        </span>
+        <h2
+          class="max-w-screen-lg text-balance font-light font-heading text-xl md:text-3xl lg:text-4xl md:leading-tight"
+        >
+          Nuestros clientes <span class="font-bold">satisfechos</span> son nuestra mejor referencia
+        </h2>
+        <p class="mt-3 w-full lg:w-2/3 xl:w-1/2 text-base lg:text-balance font-light">
+          En Astroflare, nos enfocamos en brindar servicios de alta calidad y satisfacer las necesidades de nuestros
+          clientes. A continuación, te presentamos algunos testimonios de nuestros clientes satisfechos.
+        </p>
+      </div>
+    </div>
+    <div
+      class="stardust opacity-75 w-full shrink-0 absolute rotate-[10deg] -z-50 scale-x-[2.5] scale-y-[2.5] rounded-full mask-radial-gradient h-56 md:h-80 lg:h-96"
+    >
+    </div>
+    <div
+      class="stardust opacity-50 w-full shrink-0 absolute rotate-[10deg] -z-50 scale-x-[2.5] scale-y-[4.2] rounded-full mask-radial-gradient h-56 md:h-80 lg:h-96"
+    >
+    </div>
+    <AnimatedTestimonialsPortafolio client:load />
+    <p class="text-astro-gray-300 text-balance">
+      Descubre cómo podemos ayudarte a establecer una presencia en línea sólida y confiable.
+      <a
+        class="text-astro-gray-100 underline underline-offset-2 decoration-astro-gray-300 hover:decoration-white transition-colors durartion-500 ease-out"
+        href="/"
+      >
+        Solicita un presupuesto</a
+      >
+      y empezamos a trabajar en tu proyecto.
+    </p>
+  </section>
+  <section class="my-20 sm:mt-36 mx-auto w-full max-w-screen-xl px-4 sm:px-8">
+    <ShootingStarsAndStarsBackgroundHome client:load />
+  </section>
+</Layout>

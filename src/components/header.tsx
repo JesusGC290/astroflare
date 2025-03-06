@@ -47,19 +47,19 @@ export function Header() {
 
           {/* Menú de navegación en escritorio */}
           <div className="hidden shrink flex-row items-center gap-12 lg:flex text-base">
-            <a href={`${baseUrl}/`} className="text-slate-100 hover:text-[#4af2c8] font-light text-[16px]">
+            <a href={`${baseUrl}`} className="text-slate-100 hover:text-[#4af2c8] font-light text-[16px]">
               Inicio
             </a>
 
-            <a href={`${baseUrl}/`} className="text-slate-100 hover:text-[#4af2c8] font-light">
+            <a href={`${baseUrl}portafolio`} className="text-slate-100 hover:text-[#4af2c8] font-light">
               Portafolio
             </a>
 
-            <a href={`${baseUrl}/`} className="text-slate-100 hover:text-[#4af2c8] font-light">
+            <a href={`${baseUrl}about`} className="text-slate-100 hover:text-[#4af2c8] font-light">
               Sobre nosotros
             </a>
 
-            <a href={`${baseUrl}/`} className="text-slate-100 hover:text-[#4af2c8] font-light">
+            <a href={`${baseUrl}contact`} className="text-slate-100 hover:text-[#4af2c8] font-light">
               Contacto
             </a>
           </div>
@@ -93,19 +93,19 @@ export function Header() {
         >
           {isMenuOpen && (
             <nav className="text-xl flex flex-col divide-y divide-gray-500 pb-12 text-left [&>*]:p-6">
-              <a href={`${baseUrl}/`} className="text-slate-100 hover:text-[#4af2c8] font-light text-[16px]">
+              <a href={`${baseUrl}`} className="text-slate-100 hover:text-[#4af2c8] font-light text-[16px]">
                 Inicio
               </a>
 
-              <a href={`${baseUrl}/`} className="text-slate-100 hover:text-[#4af2c8] font-light">
+              <a href={`${baseUrl}portfolio`} className="text-slate-100 hover:text-[#4af2c8] font-light">
                 Portafolio
               </a>
 
-              <a href={`${baseUrl}/`} className="text-slate-100 hover:text-[#4af2c8] font-light">
+              <a href={`${baseUrl}about`} className="text-slate-100 hover:text-[#4af2c8] font-light">
                 Sobre nosotros
               </a>
 
-              <a href={`${baseUrl}/`} className="text-slate-100 hover:text-[#4af2c8] font-light">
+              <a href={`${baseUrl}contact`} className="text-slate-100 hover:text-[#4af2c8] font-light">
                 Contacto
               </a>
               <div className="flex flex-wrap justify-between gap-12 gap-y-6">
