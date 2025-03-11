@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "../styles/global.css";
 import { Facebook, Instagram, Twitter, Menu } from "lucide-react";
-import astroLogo from "../assets/astro.svg";
+import astroLogo from "../assets/astroflare_h_w.svg";
 
 export function Header() {
   const baseUrl = import.meta.env.BASE_URL;
@@ -51,6 +51,10 @@ export function Header() {
               Inicio
             </a>
 
+            <a href={`${baseUrl}servicios`} className="text-slate-100 hover:text-[#4af2c8] font-light text-[16px]">
+              Servicios
+            </a>
+
             <a href={`${baseUrl}portafolio`} className="text-slate-100 hover:text-[#4af2c8] font-light">
               Portafolio
             </a>
@@ -95,6 +99,9 @@ export function Header() {
             <nav className="text-xl flex flex-col divide-y divide-gray-500 pb-12 text-left [&>*]:p-6">
               <a href={`${baseUrl}`} className="text-slate-100 hover:text-[#4af2c8] font-light text-[16px]">
                 Inicio
+              </a>
+              <a href={`${baseUrl}servicios`} className="text-slate-100 hover:text-[#4af2c8] font-light text-[16px]">
+                Servicios
               </a>
 
               <a href={`${baseUrl}portfolio`} className="text-slate-100 hover:text-[#4af2c8] font-light">

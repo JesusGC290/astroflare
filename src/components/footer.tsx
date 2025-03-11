@@ -1,4 +1,4 @@
-import astroLogo from "../assets/astro.svg";
+import astroLogo from "../assets/astroflare_h_w.svg";
 import { Facebook, Instagram, Twitter } from "lucide-react";
 
 export function Footer() {

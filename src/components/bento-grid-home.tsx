@@ -1,6 +1,6 @@
 "use client";
 import { cn } from "../lib/utils";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { BentoGrid, BentoGridItem } from "./ui/bento-grid";
 import {
   IconBoxAlignRightFilled,
@@ -103,6 +103,14 @@ const SkeletonTwo = () => {
     },
   };
   const arr = new Array(6).fill(0);
+
+  const [widths, setWidths] = useState<any[]>([]);
+
+  useEffect(() => {
+    const widthsArray = arr.map(() => Math.random() * (100 - 40) + 40 + "%");
+    setWidths(widthsArray);
+  }, []);
+
   return (
     <motion.div
       initial="initial"
@@ -115,7 +123,7 @@ const SkeletonTwo = () => {
           key={"skelenton-two" + i}
           variants={variants}
           style={{
-            maxWidth: Math.random() * (100 - 40) + 40 + "%",
+            maxWidth: widths[i],
           }}
           className="flex flex-row rounded-full border border-white/[0.2] p-2  items-center space-x-2 bg-black w-full h-4"
         ></motion.div>
