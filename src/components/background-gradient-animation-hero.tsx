@@ -2,7 +2,6 @@ import React from "react";
 import { BackgroundGradientAnimation } from "./ui/background-gradient-animation";
 
 export function BackgroundGradientAnimationHero() {
-  const baseUrl = import.meta.env.BASE_URL;
   return (
     <BackgroundGradientAnimation>
       <div className="absolute z-50 inset-0 flex flex-col items-center justify-center text-center gap-5 md:gap-6 lg:gap-8 px-4">
@@ -41,7 +40,7 @@ export function BackgroundGradientAnimationHero() {
         </div>
         <div className="flex flex-col md:flex-row items-center gap-4 w-fit">
           <a
-            href={`${baseUrl}/`}
+            href={`/`}
             className="bg-white px-6 py-2 group rounded-full text-base font-normal transition-all ease-in-out duration-500 hover:cursor-pointer"
           >
             <span className="bg-clip-text text-transparent bg-gradient-to-r from-[var(--flare-blue-600)] to-[var(--flare-pink-300)]  group-hover:text-blue-700 transition-all ease-in-out duration-500">
@@ -49,7 +48,7 @@ export function BackgroundGradientAnimationHero() {
             </span>
           </a>
           <a
-            href={`${baseUrl}/`}
+            href={`/`}
             className="bg-white  px-6 py-2 group rounded-full text-base font-normal transition-all ease-in-out duration-500 hover:cursor-pointer"
           >
             <span className="bg-clip-text text-transparent bg-gradient-to-r from-[var(--flare-red-500)] to-[var(--flare-orange-400)]  group-hover:text-blue-700 transition-all ease-in-out duration-500">

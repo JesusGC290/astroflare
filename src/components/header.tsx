@@ -4,7 +4,6 @@ import { Facebook, Instagram, Twitter, Menu } from "lucide-react";
 import astroLogo from "../assets/astroflare_h_w.svg";
 
 export function Header() {
-  const baseUrl = import.meta.env.BASE_URL;
   // Control del menú en móvil
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isDesktop, setIsDesktop] = useState(window.innerWidth >= 1024);
@@ -41,29 +40,29 @@ export function Header() {
       <header className="shadow py-4">
         <nav className="max-w-7xl mx-auto flex justify-between items-center px-4 lg:px-0">
           {/* Logo */}
-          <a href={`${baseUrl}/`} className="text-2xl font-bold">
+          <a href={`/`} className="text-2xl font-bold">
             <img src={astroLogo.src} width="115" height="48" alt="Astro Homepage" />
           </a>
 
           {/* Menú de navegación en escritorio */}
           <div className="hidden shrink flex-row items-center gap-12 lg:flex text-base">
-            <a href={`${baseUrl}`} className="text-slate-100 hover:text-[#4af2c8] font-light text-[16px]">
+            <a href={``} className="text-slate-100 hover:text-[#4af2c8] font-light text-[16px]">
               Inicio
             </a>
 
-            <a href={`${baseUrl}servicios`} className="text-slate-100 hover:text-[#4af2c8] font-light text-[16px]">
+            <a href={`/servicios`} className="text-slate-100 hover:text-[#4af2c8] font-light text-[16px]">
               Servicios
             </a>
 
-            <a href={`${baseUrl}portafolio`} className="text-slate-100 hover:text-[#4af2c8] font-light">
+            <a href={`/portafolio`} className="text-slate-100 hover:text-[#4af2c8] font-light">
               Portafolio
             </a>
 
-            <a href={`${baseUrl}about`} className="text-slate-100 hover:text-[#4af2c8] font-light">
+            <a href={`/about`} className="text-slate-100 hover:text-[#4af2c8] font-light">
               Sobre nosotros
             </a>
 
-            <a href={`${baseUrl}contact`} className="text-slate-100 hover:text-[#4af2c8] font-light">
+            <a href={`/contact`} className="text-slate-100 hover:text-[#4af2c8] font-light">
               Contacto
             </a>
           </div>
@@ -97,22 +96,22 @@ export function Header() {
         >
           {isMenuOpen && (
             <nav className="text-xl flex flex-col divide-y divide-gray-500 pb-12 text-left [&>*]:p-6">
-              <a href={`${baseUrl}`} className="text-slate-100 hover:text-[#4af2c8] font-light text-[16px]">
+              <a href={`/`} className="text-slate-100 hover:text-[#4af2c8] font-light text-[16px]">
                 Inicio
               </a>
-              <a href={`${baseUrl}servicios`} className="text-slate-100 hover:text-[#4af2c8] font-light text-[16px]">
+              <a href={`/servicios`} className="text-slate-100 hover:text-[#4af2c8] font-light text-[16px]">
                 Servicios
               </a>
 
-              <a href={`${baseUrl}portfolio`} className="text-slate-100 hover:text-[#4af2c8] font-light">
+              <a href={`/portafolio`} className="text-slate-100 hover:text-[#4af2c8] font-light">
                 Portafolio
               </a>
 
-              <a href={`${baseUrl}about`} className="text-slate-100 hover:text-[#4af2c8] font-light">
+              <a href={`/about`} className="text-slate-100 hover:text-[#4af2c8] font-light">
                 Sobre nosotros
               </a>
 
-              <a href={`${baseUrl}contact`} className="text-slate-100 hover:text-[#4af2c8] font-light">
+              <a href={`/contact`} className="text-slate-100 hover:text-[#4af2c8] font-light">
                 Contacto
               </a>
               <div className="flex flex-wrap justify-between gap-12 gap-y-6">
@@ -128,7 +127,7 @@ export function Header() {
                   </a>
                 </div>
                 <a
-                  href={`${baseUrl}/`}
+                  href={`/portafolio`}
                   className="px-6 py-2 bg-gradient-to-r from-blue-600 to-violet-900 flex-grow sm:max-w-sm rounded-full text-center font-light"
                 >
                   Explorar

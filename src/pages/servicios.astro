@@ -4,7 +4,6 @@ import { GlowingEffectPortafolio } from "../components/glowing-effect-portafolio
 import { HeroParallaxPortfolio } from "../components/hero-parallax-portafolio";
 import { ShootingStarsAndStarsBackgroundHome } from "../components/shooting-stars-withBackground-home";
 import Layout from "../layouts/Layout.astro";
-const baseUrl = import.meta.env.BASE_URL;
 ---
 
 <Layout>
@@ -53,7 +52,7 @@ const baseUrl = import.meta.env.BASE_URL;
         <li>Personalización sencilla</li>
       </ul>
       <a
-        href={`${baseUrl}/`}
+        href={`/portafolio`}
         class="bg-white px-6 py-2 group rounded-full text-base font-normal transition-all ease-in-out duration-500 hover:cursor-pointer"
       >
         <span
