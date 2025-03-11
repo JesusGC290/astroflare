@@ -6,7 +6,7 @@ export function BackgroundGradientAnimationHero() {
     <BackgroundGradientAnimation>
       <div className="absolute z-50 inset-0 flex flex-col items-center justify-center text-center gap-5 md:gap-6 lg:gap-8 px-4">
         <a
-          href={`${baseUrl}/`}
+          href={`/`}
           className="h-9 group w-fit flex items-center justify-center gap-0 bg-astro-dark-900/55 rounded-full"
         >
           <div className="px-3 h-full w-fit flex items-center gap-2 bg-gradient-to-tr from-[var(--flare-blue-600)] to-[var(--flare-pink-300)] rounded-full">
