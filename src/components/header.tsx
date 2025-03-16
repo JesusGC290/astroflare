@@ -46,7 +46,7 @@ export function Header() {
 
           {/* Menú de navegación en escritorio */}
           <div className="hidden shrink flex-row items-center gap-12 lg:flex text-base">
-            <a href={``} className="text-slate-100 hover:text-[#4af2c8] font-light text-[16px]">
+            <a href={`/`} className="text-slate-100 hover:text-[#4af2c8] font-light text-[16px]">
               Inicio
             </a>
 
@@ -58,13 +58,13 @@ export function Header() {
               Portafolio
             </a>
 
-            <a href={`/about`} className="text-slate-100 hover:text-[#4af2c8] font-light">
+            {/* <a href={`/about`} className="text-slate-100 hover:text-[#4af2c8] font-light">
               Sobre nosotros
             </a>
 
             <a href={`/contact`} className="text-slate-100 hover:text-[#4af2c8] font-light">
               Contacto
-            </a>
+            </a> */}
           </div>
           {/* Redes sociales */}
           <div className="hidden lg:flex">
@@ -107,13 +107,13 @@ export function Header() {
                 Portafolio
               </a>
 
-              <a href={`/about`} className="text-slate-100 hover:text-[#4af2c8] font-light">
+              {/* <a href={`/about`} className="text-slate-100 hover:text-[#4af2c8] font-light">
                 Sobre nosotros
               </a>
 
               <a href={`/contact`} className="text-slate-100 hover:text-[#4af2c8] font-light">
                 Contacto
-              </a>
+              </a> */}
               <div className="flex flex-wrap justify-between gap-12 gap-y-6">
                 <div className="flex items-center gap-4 flex-wrap">
                   <a href="https://facebook.com" className="hover:text-blue-500" target="_blank">

@@ -14,7 +14,7 @@ export function Footer() {
             </p>
           </div>
           <div className="gap-12 sm:gap-16 lg:gap-20 flex flex-wrap xl:grid xl:grid-cols-4">
-            <section className="group flex flex-col basis-32">
+            {/* <section className="group flex flex-col basis-32">
               <h2 id="footerHeading0" className="mb-4 label-base leading-none text-white font-semibold">
                 Recursos
               </h2>
@@ -35,7 +35,7 @@ export function Footer() {
                   </a>
                 </li>
               </ul>
-            </section>
+            </section> */}
             <section className="group flex flex-col basis-32">
               <h2 id="footerHeading2" className="mb-4 label-base leading-none text-white font-semibold">
                 Acerca
@@ -46,7 +46,7 @@ export function Footer() {
                     Portafolio
                   </a>
                 </li>
-                <li>
+                {/* <li>
                   <a href={`/about`} className="whitespace-nowrap link flex gap-2 items-center">
                     Nosotros
                   </a>
@@ -60,7 +60,7 @@ export function Footer() {
                   <a href={`/`} className="whitespace-nowrap link flex gap-2 items-center">
                     Partners
                   </a>
-                </li>
+                </li> */}
               </ul>
             </section>
             <section className="group flex flex-col basis-32">
