@@ -61,10 +61,11 @@ export function Header() {
             {/* <a href={`/about`} className="text-slate-100 hover:text-[#4af2c8] font-light">
               Sobre nosotros
             </a>
+            */}
 
-            <a href={`/contact`} className="text-slate-100 hover:text-[#4af2c8] font-light">
+            <a href={`/contacto`} className="text-slate-100 hover:text-[#4af2c8] font-light">
               Contacto
-            </a> */}
+            </a>
           </div>
           {/* Redes sociales */}
           <div className="hidden lg:flex">
@@ -110,10 +111,11 @@ export function Header() {
               {/* <a href={`/about`} className="text-slate-100 hover:text-[#4af2c8] font-light">
                 Sobre nosotros
               </a>
+              */}
 
-              <a href={`/contact`} className="text-slate-100 hover:text-[#4af2c8] font-light">
+              <a href={`/contacto`} className="text-slate-100 hover:text-[#4af2c8] font-light">
                 Contacto
-              </a> */}
+              </a>
               <div className="flex flex-wrap justify-between gap-12 gap-y-6">
                 <div className="flex items-center gap-4 flex-wrap">
                   <a href="https://facebook.com" className="hover:text-blue-500" target="_blank">

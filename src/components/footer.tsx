@@ -42,8 +42,18 @@ export function Footer() {
               </h2>
               <ul aria-labelledby="footerHeading2" className="flex flex-col gap-2">
                 <li>
+                  <a href={`/servicios`} className="whitespace-nowrap link flex gap-2 items-center">
+                    Servicios
+                  </a>
+                </li>
+                <li>
                   <a href={`/portafolio`} className="whitespace-nowrap link flex gap-2 items-center">
                     Portafolio
+                  </a>
+                </li>
+                <li>
+                  <a href={`/contacto`} className="whitespace-nowrap link flex gap-2 items-center">
+                    Contacto
                   </a>
                 </li>
                 {/* <li>

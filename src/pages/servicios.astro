@@ -1,10 +1,9 @@
 ---
-import { LinesScrollEffectServicios } from "../components/lines-scroll-effect-servicios";
-import { AnimatedTestimonialsPortafolio } from "../components/animated-testimonials-portafolio";
-import { GlowingEffectPortafolio } from "../components/glowing-effect-portafolio";
-import { ShootingStarsAndStarsBackgroundHome } from "../components/shooting-stars-withBackground-home";
 import Layout from "../layouts/Layout.astro";
+import { LinesScrollEffectServicios } from "../components/lines-scroll-effect-servicios";
 import { WobbleCardServicios } from "../components/wobble-card-servicios";
+import { StickyScrollRevealServicios } from "../components/sticky-scroll-reveal-servicios";
+import { ShootingStarsAndStarsBackgroundHome } from "../components/shooting-stars-withBackground-home";
 ---
 
 <Layout>
@@ -42,7 +41,40 @@ import { WobbleCardServicios } from "../components/wobble-card-servicios";
     <div class="py-10">
       <WobbleCardServicios client:load />
     </div>
-    
+  </section>
+  <section class="mt-20 md:mt-24 lg:mt-28 xl:mt-36 relative w-full">
+    <div class="w-full max-w-screen-xl mx-auto px-4 sm:px-8">
+      <div class="space-y-1">
+        <span
+          class="bg-clip-text text-transparent bg-gradient-to-r from-[var(--flare-red-500)] to-[var(--flare-pink-300)] font-semibold"
+        >
+          ¿Por qué elegirnos?
+        </span>
+        <h2
+          class="max-w-screen-lg text-balance font-light font-heading text-xl md:text-3xl lg:text-4xl md:leading-tight"
+        >
+          <span class="font-bold">Compromiso</span>, <span class="font-bold">experiencia</span> y <span
+            class="font-bold">resultados</span
+          >
+        </h2>
+        <p class="mt-3 w-full lg:w-2/3 xl:w-1/2 text-base lg:text-balance font-light">
+          Creemos en la dedicación absoluta desde el primer contacto hasta el soporte continuo. Nuestro objetivo es
+          brindar un servicio integral que combine profesionalismo, innovación y una comunicación transparente para
+          impulsar tu proyecto hacia el éxito.
+        </p>
+      </div>
+    </div>
+    <div
+      class="stardust opacity-75 w-full shrink-0 absolute rotate-[15deg] -z-50 scale-x-[2.5] scale-y-[2.5] rounded-full mask-radial-gradient h-56 md:h-80 lg:h-96"
+    >
+    </div>
+    <div
+      class="stardust opacity-50 w-full shrink-0 absolute rotate-[15deg] -z-50 scale-x-[3.5] scale-y-[4.2] rounded-full mask-radial-gradient h-56 md:h-80 lg:h-96"
+    >
+    </div>
+    <div class="mt-10">
+      <StickyScrollRevealServicios client:load />
+    </div>
   </section>
   <section class="my-20 sm:mt-36 mx-auto w-full max-w-screen-xl px-4 sm:px-8">
     <ShootingStarsAndStarsBackgroundHome client:load />

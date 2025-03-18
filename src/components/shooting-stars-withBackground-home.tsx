@@ -10,11 +10,11 @@ export function ShootingStarsAndStarsBackgroundHome() {
           <span>¡Comienza tu proyecto hoy!</span>
         </h2>
         <a
-          href={`/`}
-          className="bg-white px-6 py-2 group rounded-full text-base font-normal transition-all ease-in-out duration-500 hover:cursor-pointer"
+          href={`/contacto`}
+          className="bg-white px-6 py-2 group rounded-full text-base font-normal transition-all ease-in-out duration-500 hover:cursor-pointer text-center"
         >
           <span className="bg-clip-text text-transparent bg-gradient-to-r from-[var(--flare-blue-900)] to-[var(--flare-red-500)]  group-hover:text-blue-700 transition-all ease-in-out duration-500">
-            Recibe una consulta gratuita y personalizada
+            Recibe una consulta gratuita
           </span>
         </a>
       </div>

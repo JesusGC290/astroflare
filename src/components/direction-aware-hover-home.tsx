@@ -10,7 +10,7 @@ export function DirectionAwareHoverHome() {
   const imgRender02 = neilat.src;
   const imgRender03 = casaAsistencia.src;
   return (
-    <div className="my-12 relative  flex items-center justify-center gap-8">
+    <div className="my-12 relative  flex items-center justify-center gap-4 md:gap-8">
       <DirectionAwareHover imageUrl={imgRender01}>
         <div className="flex flex-col items-center justify-center gap-4 h-full">
           <p className="font-bold text-xl">Nei Digital</p>
