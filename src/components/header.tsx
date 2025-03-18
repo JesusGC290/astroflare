@@ -33,7 +33,7 @@ export function Header() {
 
   return (
     <div
-      className={`absolute top-0 left-0 right-0 z-100 duration-500 ease-in-out ${
+      className={`fixed top-0 left-0 right-0 z-100 duration-500 ease-in-out ${
         isMenuOpen ? "bg-black h-screen" : "bg-black/30"
       }`}
     >
@@ -63,7 +63,7 @@ export function Header() {
             </a>
             */}
 
-            <a href={`/contacto`} className="text-slate-100 hover:text-[#4af2c8] font-light">
+            <a href={`/contact`} className="text-slate-100 hover:text-[#4af2c8] font-light">
               Contacto
             </a>
           </div>
