@@ -60,10 +60,10 @@ export function Header() {
 
             {/* <a href={`/about`} className="text-slate-100 hover:text-[#4af2c8] font-light">
               Sobre nosotros
-            </a>
+            </a>  0
             */}
 
-            <a href={`/contact`} className="text-slate-100 hover:text-[#4af2c8] font-light">
+            <a href={`/contacto`} className="text-slate-100 hover:text-[#4af2c8] font-light">
               Contacto
             </a>
           </div>

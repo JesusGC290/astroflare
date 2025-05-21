@@ -1,13 +1,13 @@
 "use client";
-import neiDigital from "../assets/neiDigital.png";
-import neilat from "../assets/neilat_lan.png";
+import neiDigital from "../assets/NeiDigitalLanding.png";
+import draLuz from "../assets/draLuzPalacio.png";
 import casaAsistencia from "../assets/casaDeAsistencia.png";
 
 import { DirectionAwareHover } from "./ui/direction-aware-hover";
 
 export function DirectionAwareHoverHome() {
   const imgRender01 = neiDigital.src;
-  const imgRender02 = neilat.src;
+  const imgRender02 = draLuz.src;
   const imgRender03 = casaAsistencia.src;
   return (
     <div className="my-12 relative  flex items-center justify-center gap-4 md:gap-8">
@@ -15,7 +15,7 @@ export function DirectionAwareHoverHome() {
         <div className="flex flex-col items-center justify-center gap-4 h-full">
           <p className="font-bold text-xl">Nei Digital</p>
           <a
-            href="https://nei.digital/espacio/xVS8E0nPS0VVvi9n5YtQC/productos#scroll"
+            href="https://nei.digital/"
             target="_blank"
             className="bg-white px-6 py-2 group rounded-full text-base font-normal transition-all ease-in-out duration-500 hover:cursor-pointer"
           >
@@ -27,9 +27,9 @@ export function DirectionAwareHoverHome() {
       </DirectionAwareHover>
       <DirectionAwareHover imageUrl={imgRender02}>
         <div className="flex flex-col items-center justify-center gap-4 h-full">
-          <p className="font-bold text-xl">Nei lat</p>
+          <p className="font-bold text-xl">Dra. Luz Palacio</p>
           <a
-            href="https://nei.lat/"
+            href="https://www.draluzpalacio.mx/"
             target="_blank"
             className="bg-white px-6 py-2 group rounded-full text-base font-normal transition-all ease-in-out duration-500 hover:cursor-pointer"
           >
