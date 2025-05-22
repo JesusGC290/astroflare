@@ -1,87 +1,93 @@
 "use client";
 import React from "react";
 import { HeroParallax } from "./ui/hero-parallax";
+import neiDigital from "../assets/NeiDigitalLanding.png";
+import draLuz from "../assets/draLuzPalacio.png";
+import casaAsistencia from "../assets/casaDeAsistencia.png";
+import CirculosAbiertos from "../assets/CirculosAbiertos.png";
+import pideLand from "../assets/pideLand.png";
+import LexGuard from "../assets/LexGuard.png";
+import Aztecknology from "../assets/Aztecknology.png";
+import Renderart from "../assets/Renderart.png";
+import polarStudio from "../assets/polarStudio.png";
 
 export function HeroParallaxPortfolio() {
   return <HeroParallax products={products} />;
 }
 export const products = [
   {
-    title: "Moonbeam",
-    link: "https://gomoonbeam.com",
-    thumbnail: "https://aceternity.com/images/products/thumbnails/new/moonbeam.png",
+    title: "Nei Digital",
+    link: "https://nei.digital/",
+    thumbnail: neiDigital.src,
   },
   {
-    title: "Cursor",
-    link: "https://cursor.so",
-    thumbnail: "https://aceternity.com/images/products/thumbnails/new/cursor.png",
+    title: "Circulos Abiertos",
+    link: "https://circulosabiertos.com/",
+    thumbnail: CirculosAbiertos.src,
   },
   {
-    title: "Rogue",
-    link: "https://userogue.com",
-    thumbnail: "https://aceternity.com/images/products/thumbnails/new/rogue.png",
-  },
-
-  {
-    title: "Editorially",
-    link: "https://editorially.org",
-    thumbnail: "https://aceternity.com/images/products/thumbnails/new/editorially.png",
+    title: "Pide Land",
+    link: "https://pide.land/",
+    thumbnail: pideLand.src,
   },
   {
-    title: "Editrix AI",
-    link: "https://editrix.ai",
-    thumbnail: "https://aceternity.com/images/products/thumbnails/new/editrix.png",
+    title: "LexGuard",
+    link: "https://lexguard.app/",
+    thumbnail: LexGuard.src,
   },
   {
-    title: "Pixel Perfect",
-    link: "https://app.pixelperfect.quest",
-    thumbnail: "https://aceternity.com/images/products/thumbnails/new/pixelperfect.png",
-  },
-
-  {
-    title: "Algochurn",
-    link: "https://algochurn.com",
-    thumbnail: "https://aceternity.com/images/products/thumbnails/new/algochurn.png",
+    title: "Aztecknology",
+    link: "https://aztecknology.com/",
+    thumbnail: Aztecknology.src,
   },
   {
-    title: "Aceternity UI",
-    link: "https://ui.aceternity.com",
-    thumbnail: "https://aceternity.com/images/products/thumbnails/new/aceternityui.png",
+    title: "Dra. Luz Palacio",
+    link: "https://www.draluzpalacio.mx/",
+    thumbnail: draLuz.src,
   },
   {
-    title: "Tailwind Master Kit",
-    link: "https://tailwindmasterkit.com",
-    thumbnail: "https://aceternity.com/images/products/thumbnails/new/tailwindmasterkit.png",
+    title: "Casa de Asistencia",
+    link: "https://casadeasistenciagdl.com/",
+    thumbnail: casaAsistencia.src,
   },
   {
-    title: "SmartBridge",
-    link: "https://smartbridgetech.com",
-    thumbnail: "https://aceternity.com/images/products/thumbnails/new/smartbridge.png",
+    title: "Polar Studio",
+    link: "https://astroflare.ai/",
+    thumbnail: polarStudio.src,
   },
   {
-    title: "Renderwork Studio",
-    link: "https://renderwork.studio",
-    thumbnail: "https://aceternity.com/images/products/thumbnails/new/renderwork.png",
-  },
-
-  {
-    title: "Creme Digital",
-    link: "https://cremedigital.com",
-    thumbnail: "https://aceternity.com/images/products/thumbnails/new/cremedigital.png",
+    title: "Renderart",
+    link: "https://jesusgc290.github.io/renderart/",
+    thumbnail: Renderart.src,
   },
   {
-    title: "Golden Bells Academy",
-    link: "https://goldenbellsacademy.com",
-    thumbnail: "https://aceternity.com/images/products/thumbnails/new/goldenbellsacademy.png",
+    title: "Nei Digital",
+    link: "https://nei.digital/",
+    thumbnail: neiDigital.src,
   },
   {
-    title: "Invoker Labs",
-    link: "https://invoker.lol",
-    thumbnail: "https://aceternity.com/images/products/thumbnails/new/invoker.png",
+    title: "Circulos Abiertos",
+    link: "https://circulosabiertos.com/",
+    thumbnail: CirculosAbiertos.src,
   },
   {
-    title: "E Free Invoice",
-    link: "https://efreeinvoice.com",
-    thumbnail: "https://aceternity.com/images/products/thumbnails/new/efreeinvoice.png",
+    title: "Pide Land",
+    link: "https://pide.land/",
+    thumbnail: pideLand.src,
+  },
+  {
+    title: "LexGuard",
+    link: "https://lexguard.app/",
+    thumbnail: LexGuard.src,
+  },
+  {
+    title: "Aztecknology",
+    link: "https://aztecknology.com/",
+    thumbnail: Aztecknology.src,
+  },
+  {
+    title: "Dra. Luz Palacio",
+    link: "https://www.draluzpalacio.mx/",
+    thumbnail: draLuz.src,
   },
 ];
